@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Light blue background */
+}
+.header {
+    width: 100%;
+    background-color: #0d47a1; /* Dark blue background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.container:hover {
+    transform: translateY(-5px);
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0d47a1; /* Dark blue color */
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0d47a1; /* Dark blue color */
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #0d47a1; /* Dark blue border */
+    border-radius: 5px;
+}
+.form-group input[type="file"] {
+    padding: 3px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #0d47a1; /* Dark blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background-color: #094a8f; /* Slightly darker blue on hover */
+    transform: translateY(-3px);
+}
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+.result img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+#resultText {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #0d47a1; /* Dark blue color */
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .form-group input, .form-group select {
+        padding: 8px;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    #resultText {
+        font-size: 16px;
+    }
+}

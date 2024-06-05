@@ -1,0 +1,7 @@
+uvicorn[standard]
+opencv-python
+scikit-image 
+fastapi
+numpy
+tensorflow
+scikit-learn

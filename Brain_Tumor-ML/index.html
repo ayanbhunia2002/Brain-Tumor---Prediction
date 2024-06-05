@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Brain Tumor Classifier</h1>
+    </div>
+    <div class="container">
+        <h2>Cell Image Classifier</h2>
+        <form id="imageForm">
+            <div class="form-group">
+                <label for="fileInput">Choose Image</label>
+                <input type="file" id="imageInput" accept="image/*" required onchange="displayImage(event)"">
+            </div>
+            <button type="button" onclick="uploadImage()">Send</button>
+        </form>
+        <div class="result" id="result">
+            <img id="uploadedImage" src="" alt="Uploaded Image" style="display:none;">
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
